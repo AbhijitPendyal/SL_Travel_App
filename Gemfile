@@ -21,5 +21,3 @@ gem 'rubyzip', '1.1.7'
 gem 'rvm', '1.11.3.9'
 gem 'selenium-client', '1.2.18'
 gem 'selenium-webdriver', '2.45.0'
-
-end
