@@ -63,7 +63,7 @@ caps = [caps1, caps2, caps3, caps4, caps5, caps6, caps7, caps8]
 
 caps.peach do |cap|
 driver = Selenium::WebDriver.for(:remote,
-    :url => "http://john_doe1:f7cc4afd-99e0-4676-b2c8-381ea9e9c750@ondemand.saucelabs.com:80/wd/hub",
+    :url => "http://abhijitpendyal:7a81c9f5-a6de-406d-9923-4823266d649b@ondemand.saucelabs.com:80/wd/hub",
     :desired_capabilities => cap)
 
 driver.get "http://blazedemo.com/"
