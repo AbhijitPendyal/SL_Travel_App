@@ -47,11 +47,11 @@
     <h2>Choose your departure city:</h2>
     <form action="reserve.php" method="post">
         <select name="fromPort" class="form-inline">
-            <option value="Paris">Pars</option>
+            <option value="Paris">Paris</option>
             <option value="Philadelphia">Philadelphia</option>
             <option value="Boston">Boston</option>
             <option value="Portland">Portland</option>
-            <option value="San Diego">San Diego</option>
+            <option value="San Diego">San</option>
             <option value="Mexico City">Mexico City</option>
             <option value="São Paolo">São Paolo</option>
         </select>
