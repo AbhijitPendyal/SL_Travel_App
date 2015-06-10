@@ -7,56 +7,56 @@ caps1['platform'] = 'Linux'
 caps1['version'] = '37.0'
 caps1['passed'] = 'true'
 caps1["name"] = "Selenium on Sauce on C37Linux"
-caps1["build"] = ENV['JOB_NAME']
+caps1["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 caps2 = Selenium::WebDriver::Remote::Capabilities.firefox
 caps2['platform'] = 'Windows 7'
 caps2['version'] = '35.0'
 caps2['passed'] = 'true'
 caps2["name"] = "Testing made awesome on F35Win7"
-caps2["build"] = ENV['JOB_NAME']
+caps2["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 caps3 = Selenium::WebDriver::Remote::Capabilities.safari
 caps3['platform'] = 'OS X 10.9'
 caps3['version'] = '7.0'
 caps3['passed'] = 'true'
 caps3["name"] = "Sausome Selenium on S7OSX10.9"
-caps3["build"] = ENV['JOB_NAME']
+caps3["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 caps4 = Selenium::WebDriver::Remote::Capabilities.internet_explorer
 caps4['platform'] = 'Windows 8.1'
 caps4['version'] = '11.0'
 caps4['passed'] = 'true'
 caps4["name"] = "Selenium on Sauce on IE11Win8.1"
-caps4["build"] = ENV['JOB_NAME']
+caps4["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 caps5 = Selenium::WebDriver::Remote::Capabilities.firefox
 caps5['platform'] = 'Linux'
 caps5['version'] = 'beta'
 caps5['passed'] = 'true'
 caps5["name"] = "Selenium on Sauce on Linux"
-caps5["build"] = ENV['JOB_NAME']
+caps5["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 caps6 = Selenium::WebDriver::Remote::Capabilities.chrome
 caps6['platform'] = 'Windows XP'
 caps6['version'] = '40.0'
 caps6['passed'] = 'true'
 caps6["name"] = "Testing made awesome on WinXP"
-caps6["build"] = ENV['JOB_NAME']
+caps6["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 caps7 = Selenium::WebDriver::Remote::Capabilities.safari
 caps7['platform'] = 'OS X 10.8'
 caps7['version'] = '6.0'
 caps7['passed'] = 'true'
 caps7["name"] = "Running sauce on Mac 10.8"
-caps7["build"] = ENV['JOB_NAME']
+caps7["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 caps8 = Selenium::WebDriver::Remote::Capabilities.internet_explorer
 caps8['platform'] = 'Windows 8'
 caps8['version'] = '10.0'
 caps8['passed'] = 'true'
 caps8["name"] = "Let's try on IE10"
-caps8["build"] = ENV['JOB_NAME']
+caps8["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
 
 caps = [caps1, caps2, caps3, caps4, caps5, caps6, caps7, caps8]
