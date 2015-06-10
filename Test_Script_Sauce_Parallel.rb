@@ -68,7 +68,7 @@ driver = Selenium::WebDriver.for(:remote,
 
 driver.get "http://blazedemo.com/"
 
-if not driver.find_element(:tag_name, "html").text.include? "Welcome to the Simple Travel Agency!"
+if not driver.find_element(:tag_name, "html").text.include? "Welcome to the Agency!"
     print "verifyTextPresent failed"
 end
 
