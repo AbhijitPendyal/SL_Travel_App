@@ -69,7 +69,7 @@ driver = Selenium::WebDriver.for(:remote,
 driver.get "http://blazedemo.com/"
 
 if not driver.find_element(:tag_name, "html").text.include? "Welcome to the Agency!"
-    raise "verifyTextPresent failed"
+    print "verifyTextPresent failed"
 end
 
 if not driver.find_element(:xpath, "//div[3]/form/select[1]//option[5]").selected?
