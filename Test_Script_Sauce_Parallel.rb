@@ -5,7 +5,7 @@ require 'selenium-webdriver'
 caps1 = Selenium::WebDriver::Remote::Capabilities.chrome
 caps1['platform'] = 'Linux'
 caps1['version'] = '37.0'
-caps1['passed'] = 'false'
+caps1['passed'] = 'true'
 caps1["name"] = "Selenium on Sauce on C37Linux"
 caps1["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
