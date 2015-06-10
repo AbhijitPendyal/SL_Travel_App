@@ -5,7 +5,7 @@ require 'selenium-webdriver'
 caps1 = Selenium::WebDriver::Remote::Capabilities.chrome
 caps1['platform'] = 'Linux'
 caps1['version'] = '37.0'
-caps1['passed'] = 'true'
+caps1['passed'] = 'failed'
 caps1["name"] = "Selenium on Sauce on C37Linux"
 caps1["build"] = ENV['JOB_NAME'] + ENV['BUILD_NUMBER']
 
@@ -69,7 +69,7 @@ driver = Selenium::WebDriver.for(:remote,
 driver.get "http://blazedemo.com/"
 
 if not driver.find_element(:tag_name, "html").text.include? "Welcome to the Agency!"
-    print "verifyTextPresent failed"
+    raise "verifyTextPresent failed"
 end
 
 if not driver.find_element(:xpath, "//div[3]/form/select[1]//option[5]").selected?
